@@ -1,4 +1,10 @@
 import streamlit as st
+from time import sleep
+import json
+from matcher import load_student_data, load_universities_database, match
+from openai import OpenAI
+import replicate
+import os
 
 #--- Replicate API Settings & llama2
 #test_secret = st.secrets['test']
@@ -6,12 +12,7 @@ st.write("Hello World")
 test_secret = st.secrets["REPLICATE_API_TOKEN"]
 st.write(test_secret)
 
-from time import sleep
-import json
-from matcher import load_student_data, load_universities_database, match
-from openai import OpenAI
-import replicate
-import os
+
 
 #--- Replicate API Settings & llama2
 #test_secret = st.secrets['test']
