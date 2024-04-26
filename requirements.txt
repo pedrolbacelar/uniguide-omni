@@ -2,4 +2,3 @@ scikit-learn
 nltk
 openai
 replicate
-nltk.download('stopwords')

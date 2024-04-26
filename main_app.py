@@ -5,14 +5,8 @@ from matcher import load_student_data, load_universities_database, match
 from openai import OpenAI
 import replicate
 import os
-
-#--- Replicate API Settings & llama2
-#test_secret = st.secrets['test']
-st.write("Hello World")
-test_secret = st.secrets["REPLICATE_API_TOKEN"]
-st.write(test_secret)
-
-
+import nltk
+nltk.download('stopwords')
 # https://uniguide.streamlit.app/
 
 #------------------------------------------------------- Class & Functions -------------------------------------------------------
