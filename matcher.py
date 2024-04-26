@@ -5,7 +5,7 @@ from nltk.tokenize import word_tokenize
 import json
 import streamlit as st
 import nltk
-nltk.download('stopwords')
+#nltk.download('stopwords')
 
 def load_student_data():
     #--- load the json file
