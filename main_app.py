@@ -5,8 +5,6 @@ from matcher import load_student_data, load_universities_database, match
 from openai import OpenAI
 import replicate
 import os
-import nltk
-nltk.download('stopwords')
 # https://uniguide.streamlit.app/
 
 #------------------------------------------------------- Class & Functions -------------------------------------------------------

@@ -1,11 +1,14 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+
+import nltk
+nltk.download('stopwords')
+
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import json
 import streamlit as st
-import nltk
-#nltk.download('stopwords')
+
 
 def load_student_data():
     #--- load the json file
