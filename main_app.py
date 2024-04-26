@@ -122,6 +122,7 @@ class Llama2():
         self.instructions = [
             "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'.",
             "Always give short answers and do not provide too much information.",
+            "Do not reply with the history of message, like 'User: ...' or 'Assistant: ...'. You only reply as Assitant always",
             "You only answer requests related to universities. If the topic is not this, answer: 'I'm not trained with data not related to universities.'",
         ]
 
@@ -148,7 +149,7 @@ class Llama2():
 
     def give_profile_overview(self, loaded_profile, best_university):
         #--- Give an overview of the user profile and the best university, and why it is the best match
-        overview_profile = f"Why I'm good match with {best_university}? (answer only for the best university)"
+        overview_profile = f"Why {best_university} is a good match for me? (answer only for the best university)"
 
 
         return self.generate_llama2_response(overview_profile)
