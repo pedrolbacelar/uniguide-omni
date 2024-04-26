@@ -155,7 +155,7 @@ class Llama2():
 
         return self.generate_llama2_response(overview_profile)
 
-st.title("UniGuide Chat App")
+st.title("UniGuide 🐈")
 # ------------------------------------------------------- SETUP -------------------------------------------------------
 #--- Initialize Agents
 assistant = Assistant()
