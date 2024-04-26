@@ -5,6 +5,20 @@ from matcher import load_student_data, load_universities_database, match
 from openai import OpenAI
 import replicate
 import os
+#--- Stop words
+import os
+import nltk
+
+# Check if NLTK data directory exists
+nltk_data_dir = os.path.join(os.path.expanduser("~"), "nltk_data")
+if not os.path.exists(nltk_data_dir):
+    os.makedirs(nltk_data_dir)
+
+# Download NLTK stopwords if not already downloaded
+stopwords_path = os.path.join(nltk_data_dir, "corpora/stopwords")
+if not os.path.exists(stopwords_path):
+    nltk.download('stopwords', download_dir=nltk_data_dir)
+
 # https://uniguide.streamlit.app/
 
 #------------------------------------------------------- Class & Functions -------------------------------------------------------
