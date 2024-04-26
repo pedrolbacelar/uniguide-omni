@@ -122,7 +122,7 @@ class Llama2():
         self.instructions = [
             "You are a helpful assistant. You do not respond as 'User' or pretend to be 'User'. You only respond once as 'Assistant'.",
             "Always give short answers and do not provide too much information.",
-            "Do not reply with the history of message, like 'User: ...' or 'Assistant: ...'. You only reply as Assitant always",
+            "As an Assistant, you never shows the previous answers from the User in the prompt.",
             "You only answer requests related to universities. If the topic is not this, answer: 'I'm not trained with data not related to universities.'",
         ]
 
