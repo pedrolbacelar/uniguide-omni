@@ -185,7 +185,7 @@ if "messages" not in st.session_state:
 with st.chat_message("assistant"):
     st.markdown("Welcome to the complete experience of UniGuide Chatbot 👋!")
     st.markdown("I am here to help you find the best university for you and also to explore more about the universities information! 📖")
-    st.markdown("Please, if you want to find the perfect match for you, type 'UniMatch'. If you want to discover more about the universities, type 'UniBuddy'")
+    st.markdown("Please, if you want to find the perfect match for you, type 'UniMatch'. If you want to discover more about the universities, type 'UniBuddy'. Type 'end' to finish the conversation. 🎓")
     st.markdown("⚠️ **Disclaimer: The product is currently in the development phase. Therefore, any suggestions or recommendations provided should be taken with user discretion.** ")
 #=======================================================
 # Display chat messages from history on app rerun
@@ -197,10 +197,11 @@ for message in st.session_state.messages:
 #--------- Check for limited message or "end" requested by the user ---------
 
 flag_end = False
-limited_messages = 30
+limited_messages = 22
 
 # ------------------------------------------------------- MAIN -------------------------------------------------------
 if prompt := st.chat_input("What is up?"):
+    #st.write(len(st.session_state.messages))
 
     #---- Check for limited messages
     if len(st.session_state.messages) > limited_messages or flag_end or prompt.lower() == "end":
