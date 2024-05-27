@@ -7,7 +7,7 @@ import replicate
 import os
 
 
-# https://uniguide.streamlit.app/
+# https://uniguide-omni.streamlit.app/
 
 #------------------------------------------------------- Class & Functions -------------------------------------------------------
 class Assistant():
