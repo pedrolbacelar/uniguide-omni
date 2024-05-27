@@ -197,7 +197,7 @@ for message in st.session_state.messages:
 #--------- Check for limited message or "end" requested by the user ---------
 
 flag_end = False
-limited_messages = 10
+limited_messages = 15
 
 # ------------------------------------------------------- MAIN -------------------------------------------------------
 if prompt := st.chat_input("What is up?"):
