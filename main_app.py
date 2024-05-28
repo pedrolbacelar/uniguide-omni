@@ -207,8 +207,8 @@ if prompt := st.chat_input("What is up?"):
     if len(st.session_state.messages) > limited_messages or flag_end or prompt.lower() == "end":
         flag_end = True
         assistant.print_and_add_message("[ERROR] You have reached the limit of messages. Please, consider buying the full version or sending feedback to us.")
-        assistant.print_and_add_message("[Buy Full Version](https://www.uniguide.it/contact)")
-        assistant.print_and_add_message("[Send Feedback](https://www.uniguide.it/contact)")
+        assistant.print_and_add_message("[Buy Full Version](https://uniguide.squarespace.com/pricingmain)")
+        assistant.print_and_add_message("[Send Feedback](https://uniguide.squarespace.com/pricingmain)")
 
 
     if not flag_end:
